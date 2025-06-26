@@ -96,7 +96,7 @@
 }
 
 .button-form {
-    border: 1px solid #030a06;
+    border: 1px solid #113916;
     background-color: #113916;
     opacity: 0.6;
     border-radius: 6px;
@@ -112,7 +112,7 @@
 
 .button-form:hover {
     background-color: transparent;
-    color: #030a06;
+    color: #113916;
 }
 
 .button-form:focus {
