@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTote</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Sans:ital,wght@0,400;0,500;0,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="section-form">   
+        <p class="form-text">Залишились питання?<br>Зв'яжіться з нами!</p>
+        <p class="form-subtext">Ми тут, щоб допомогти!</p>
+
+        <form class="form">
+            <div class="form-container">
+                <label class="form-label" for="user-name">Ім'я</label>
+                <div class="form-input-container">
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Іван">
+                </div>
+            </div>
+
+            <div class="form-container">
+                <label class="form-label" for="email">Електронна пошта</label>
+                <div class="form-input-container">
+                    <input class="form-input" type="text" name="email" id="email" placeholder="hello@ecotote.com">
+                </div>
+            </div>
+    
+            <div class="textarea-container">
+                <label class="form-label" for="user-comment">Повідомлення</label>
+                <textarea class="form-input form-textarea" name="user-comment" id="user-comment" placeholder="Введіть своє повідомлення..."></textarea>
+            </div>
+    
+            <button type="submit" class="button-form">Надіслати</button>
+
+            <img class="image-form" src="./images/1x/form-image-mob.jpg" alt="">
+        </form>
+    </div>
+</body>
+</html>
