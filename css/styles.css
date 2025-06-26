@@ -1,10 +1,13 @@
-.section-form {
+.section-seven {
     width: 320px;
     padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     margin: 0 auto;
 }
 
-.form-text {
+.form-title {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -15,7 +18,7 @@
     margin-top: 0;
 }
 
-.form-subtext {
+.form-subtitle {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -32,8 +35,6 @@
 
 .form-label {
     font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.6;
     color: #030a06;
     display: block;
@@ -65,6 +66,25 @@
     color: #030a06;
 }
 
+.form-input:not(:placeholder-shown):invalid {
+    border-color: #d64040; 
+    color: #d64040;
+}
+
+.form-input:not(:placeholder-shown):invalid~.text-invalid {
+    display: block;
+}
+
+.text-invalid { 
+    display: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d64040;
+    margin: 0;
+}
+
 .textarea-container {
     display: flex;
     flex-direction: column;
@@ -75,12 +95,12 @@
     min-width: 288px;
 }
 
-
 .button-form {
     border: 1px solid #030a06;
-    background-color: #030a06;
+    background-color: #113916;
+    opacity: 0.6;
     border-radius: 6px;
-    min-width: 288px;
+    width: 288px;
     height: 50px;
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
@@ -101,5 +121,88 @@
 }
 
 .image-form {
+    background-image: url(../images/1x/form-image-mob.jpg);
     border-radius: 40px;
+    height: 428px;
+}
+
+@media screen and (min-resolution: 2x) {
+    .image-form {
+        background-image: url(../images/2x/form-image-mob@2x.jpg);        
+    }
+}
+
+
+/* --------------------TABLET-------------------- */
+
+@media screen and (min-width: 768px) {
+
+    .section-seven {
+        width: 768px;
+        padding: 64px 32px;
+    }
+
+    .form-input {
+        min-width: 704px;
+    }
+    
+    .form-textarea {
+        min-width: 704px;
+    }
+    
+    .button-form {
+        width: 249px;
+    }
+
+    .image-form {
+        background-image: url(../images/1x/form-image-tab.jpg);
+    }
+        
+    @media screen and (min-resolution: 2x) {
+        .image-form {
+            background-image: url(../images/2x/form-image-tab@2x.jpg);        
+        }
+    }
+}
+
+/* --------------------DESKTOP-------------------- */
+
+@media screen and (min-width: 1158px) {
+
+    .section-seven {
+        width: 1440px;
+        padding: 64px;
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+    }
+
+    .section-form {
+        width: 644px;
+    }
+
+    .form-input {
+        min-width: 644px;
+    }
+    
+    .form-textarea {
+        min-width: 644px;
+    }
+    
+    .button-form {
+        width: 198px;
+    }
+
+    .image-form {
+        background-image: url(../images/1x/form-image-desk.jpg);
+        width: 644px;
+        height: 767px;
+    }
+        
+    @media screen and (min-resolution: 2x) {
+        .image-form {
+            background-image: url(../images/2x/form-image-desk@2x.jpg);        
+        }
+    }
+
 }
