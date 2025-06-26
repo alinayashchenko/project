@@ -128,7 +128,8 @@
 
 @media screen and (min-resolution: 2x) {
     .image-form {
-        background-image: url(../images/2x/form-image-mob@2x.jpg);        
+        background-image: url(../images/2x/form-image-mob@2x.jpg);
+        background-size: cover;
     }
 }
 
@@ -160,7 +161,7 @@
         
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../images/2x/form-image-tab@2x.jpg);        
+            background-image: url(../images/2x/form-image-tab@2x.jpg);
         }
     }
 }
@@ -201,7 +202,7 @@
         
     @media screen and (min-resolution: 2x) {
         .image-form {
-            background-image: url(../images/2x/form-image-desk@2x.jpg);        
+            background-image: url(../images/2x/form-image-desk@2x.jpg);    
         }
     }
 
