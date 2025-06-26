@@ -168,7 +168,7 @@
 
 /* --------------------DESKTOP-------------------- */
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
 
     .section-seven {
         width: 1440px;
@@ -180,6 +180,10 @@
 
     .section-form {
         width: 644px;
+    }
+
+    .form-title {
+        font-size: 48px;
     }
 
     .form-input {
